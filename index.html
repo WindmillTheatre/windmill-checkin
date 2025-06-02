@@ -63,8 +63,8 @@
       document.getElementById('buttons').style.display = 'none';
       document.getElementById('preview').style.display = 'block';
 
-      scanner = new Html5Qrcode("preview");
-      scanner.start({ facingMode: "user" }, { fps: 10, qrbox: 250 }, qrCodeSuccess);
+scanner = new Html5Qrcode("preview");
+scanner.start({ facingMode: "user" }, { fps: 10, qrbox: 250 }, qrCodeSuccess);
     }
 
     function qrCodeSuccess(decodedText) {
